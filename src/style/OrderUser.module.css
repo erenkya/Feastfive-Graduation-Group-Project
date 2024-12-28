@@ -1,0 +1,161 @@
+.orderContainer {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  
+}
+.cartComponent {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: 5px;
+  transition: all 0.35s ease;
+  border:2px solid#e9e9e9;
+
+}
+.innerCartComponent {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  
+}
+.cartComponent:hover {
+  transform: scale(1.0035);
+}
+.innerCart {
+  display: flex;
+  align-items: center;
+}
+
+.orderImage {
+  width: 200px;
+  border-radius: 15px;
+}
+.innerContent {
+  margin-left: 15px;
+  height: 100%;
+}
+.mealTitle {
+  font-size: 23px;
+  font-weight: 600;
+}
+.price {
+  font-weight: 500;
+  color: #787878;
+}
+.statusP {
+  margin-right: 15px;
+  font-weight: 600;
+  color: #91db37;
+}
+.statusD {
+  margin-right: 15px;
+  font-weight: 600;
+  color: #787878;
+}
+.statusC {
+  margin-right: 15px;
+  font-weight: 600;
+  color: #db3748;
+}
+
+@media (max-width: 680px) {
+  .orderContainer {
+    width: 80%;
+  }
+}
+@media (max-width: 545px) {
+  .orderContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 475px) {
+  .orderContainer {
+    width: 95%;
+  }
+  .orderImage {
+    width: 130px;
+    border-radius: 15px;
+  }
+}
+
+.expander {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.innerExpander {
+  width: 44%;
+  margin-bottom: 1rem;
+  
+}
+.commendLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 600 ;
+  
+}
+.commendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #828282;
+  transition: all 0.3s ease;
+}
+.commendButton:hover {
+  color: #0f0f0f;
+}
+.commendTextArea {
+  text-decoration: none;
+  width: 100%;
+  height: 8rem;
+  border: #cdcccc solid 2px;
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-top: 5px;
+  font-size: 17px;
+  margin-top: 5px;
+  font-weight:400 ;
+  transition: .2s;
+
+}
+.commendTextArea:focus {
+  border-color: rgb(151, 149, 149);
+  outline: none;
+}
+.submitContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.submitButton {
+  background-color: #e85362;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px; 
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.submitButton:hover {
+  background-color: rgb(212, 49, 65);
+}
+.loader {
+  position: relative;
+}
